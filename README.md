@@ -21,6 +21,13 @@ wget -qO OsMutation.sh https://raw.githubusercontent.com/LloydAsp/OsMutation/mai
 
 [![asciicast](https://asciinema.org/a/582009.svg)](https://asciinema.org/a/582009)
 
+## 被禁止时
+```
+sudo chown -Rv _apt:root /var/cache/apt/archives/partial/
+
+sudo chmod -Rv 700 /var/cache/apt/archives/partial/
+```
+
 ## Notice
 - A fresh system will be installed and all old data will be wiped! Backup your important data first.
 - OpenVZ 7 and above is support, not OpenVZ 6.
